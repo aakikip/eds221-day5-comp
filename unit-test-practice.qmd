@@ -50,6 +50,7 @@ mean_range <- function(df) {
 
 mean_range(df = mtcars)
 ```
+
 Write some unit tests!
 
 ```{r}
@@ -63,4 +64,14 @@ expect_true(mean_range(mtcars)[1] > mean_range(mtcars)[2])
 if (mean_range(mtcars)[1] > mean_range(mtcars)[2]) {
   stop()
 }
+```
+
+## practice sourcing functions
+
+```{r}
+#source our food cart functions
+source(here::here("src", "food-cart-functions.R"))
+
+#test running function
+name_cart(food = "strawberry", animal = "marmot")
 ```
