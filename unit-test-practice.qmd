@@ -75,3 +75,12 @@ source(here::here("src", "food-cart-functions.R"))
 #test running function
 name_cart(food = "strawberry", animal = "marmot")
 ```
+
+```{r}
+#source cork oak function
+source(here::here("src", "cork_oak_growth.R"))
+
+#call function
+height_t2(3, 1, 5)
+
+```
